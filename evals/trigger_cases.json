@@ -1,0 +1,22 @@
+{
+  "recommended_threshold": 0.18,
+  "should_trigger": [
+    "Be my Socratic AI teacher for calculus and ask me questions before explaining.",
+    "Teach me photosynthesis with a prerequisite plan and guided lesson.",
+    "Help me with this homework by giving hints, not the final answer.",
+    "/plan quantum mechanics for an undergraduate learner",
+    "/test my understanding of supply and demand"
+  ],
+  "should_not_trigger": [
+    "Give me a one-sentence definition of photosynthesis.",
+    "Write my biology homework answer for submission.",
+    "Summarize this article without teaching it.",
+    "Create marketing copy for an online course.",
+    "Give medical advice for this symptom."
+  ],
+  "near_neighbor": [
+    "Generate flashcards only, with no tutoring dialogue.",
+    "Create a classroom syllabus document for an entire semester.",
+    "Design a landing page for an AI tutor product."
+  ]
+}

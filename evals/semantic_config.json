@@ -1,0 +1,197 @@
+{
+  "optimizer_hints": {
+    "capability": "Teach learners with adaptive Socratic curriculum, guided questions, hints, and assessments",
+    "inputs": [
+      "topic",
+      "lesson",
+      "curriculum",
+      "homework attempt",
+      "student level"
+    ],
+    "trigger_actions": [
+      "teach",
+      "tutor",
+      "build a lesson plan",
+      "ask guided questions",
+      "give hints",
+      "test understanding"
+    ],
+    "exclusions": [
+      "one-off facts",
+      "generic summaries",
+      "homework completion without teaching",
+      "course marketing",
+      "professional advice"
+    ],
+    "artifacts": [
+      "curriculum",
+      "lesson",
+      "hint",
+      "worked example",
+      "practice questions",
+      "feedback"
+    ]
+  },
+  "fallback_positive_concepts": [
+    "teach",
+    "curriculum",
+    "socratic",
+    "assessment"
+  ],
+  "positive_concepts": {
+    "teach": {
+      "weight": 0.28,
+      "phrases": [
+        "teach",
+        "teacher",
+        "tutor",
+        "learn",
+        "learning",
+        "lesson",
+        "explain",
+        "help me understand",
+        "ai teacher",
+        "老师",
+        "導師",
+        "教我",
+        "学习",
+        "學習"
+      ]
+    },
+    "curriculum": {
+      "weight": 0.24,
+      "phrases": [
+        "curriculum",
+        "lesson plan",
+        "plan",
+        "/plan",
+        "prerequisite",
+        "from the basics",
+        "课程",
+        "課程",
+        "学习计划",
+        "學習計畫"
+      ]
+    },
+    "socratic": {
+      "weight": 0.24,
+      "phrases": [
+        "socratic",
+        "guided questions",
+        "ask me questions",
+        "questions before explaining",
+        "hint",
+        "hints",
+        "not the final answer",
+        "蘇格拉底",
+        "苏格拉底",
+        "提示",
+        "提問",
+        "提问"
+      ]
+    },
+    "assessment": {
+      "weight": 0.18,
+      "phrases": [
+        "test",
+        "/test",
+        "quiz",
+        "assess",
+        "assessment",
+        "practice problem",
+        "test me",
+        "mastery",
+        "测试",
+        "測試",
+        "练习题",
+        "練習題"
+      ]
+    },
+    "homework_teaching": {
+      "weight": 0.12,
+      "phrases": [
+        "homework by giving hints",
+        "help me with this homework",
+        "not the answer",
+        "作業提示",
+        "作业提示"
+      ]
+    }
+  },
+  "negative_concepts": {
+    "summary_only": {
+      "weight": 0.32,
+      "exclusive": true,
+      "phrases": [
+        "summarize",
+        "summary",
+        "recap",
+        "总结",
+        "總結",
+        "概括"
+      ]
+    },
+    "fact_lookup": {
+      "weight": 0.28,
+      "exclusive": true,
+      "phrases": [
+        "one-sentence definition",
+        "definition of",
+        "what is",
+        "latest",
+        "定义",
+        "定義",
+        "最新"
+      ]
+    },
+    "homework_completion": {
+      "weight": 0.42,
+      "exclusive": true,
+      "phrases": [
+        "write my homework",
+        "homework answer",
+        "for submission",
+        "direct answer",
+        "代写",
+        "代寫",
+        "作业答案",
+        "作業答案"
+      ]
+    },
+    "marketing_course": {
+      "weight": 0.26,
+      "exclusive": true,
+      "phrases": [
+        "landing page",
+        "marketing",
+        "online course",
+        "sell this course",
+        "营销",
+        "行銷"
+      ]
+    },
+    "professional_advice": {
+      "weight": 0.3,
+      "exclusive": true,
+      "phrases": [
+        "medical advice",
+        "legal advice",
+        "financial advice",
+        "symptom",
+        "诊断",
+        "診斷"
+      ]
+    },
+    "flashcards_only": {
+      "weight": 0.18,
+      "exclusive": true,
+      "phrases": [
+        "flashcards only",
+        "flashcards",
+        "anki",
+        "抽认卡",
+        "抽認卡"
+      ]
+    }
+  }
+}
