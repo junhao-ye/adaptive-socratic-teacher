@@ -78,4 +78,4 @@ I am stuck on this physics problem. Please give me a hint, not the final answer.
 
 ## ライセンス
 
-現時点ではライセンスを宣言していません。公開配布の前に `LICENSE` を追加してください。
+このプロジェクトは [MIT License](LICENSE) のもとで公開されています。

@@ -84,4 +84,4 @@ The generated skill package was validated with:
 
 ## License
 
-No license is declared yet. Add a `LICENSE` file before public distribution.
+This project is licensed under the [MIT License](LICENSE).

@@ -78,4 +78,4 @@ Use $adaptive-socratic-teacher /hint
 
 ## 授權
 
-目前尚未宣告授權。公開發佈前請加入 `LICENSE` 檔案。
+本專案採用 [MIT License](LICENSE) 授權。
