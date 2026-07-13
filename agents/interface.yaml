@@ -1,0 +1,25 @@
+interface:
+  display_name: "Adaptive Socratic Teacher"
+  short_description: "Plan lessons, ask guided questions, give hints, and test mastery"
+  default_prompt: "Use $adaptive-socratic-teacher to teach this topic through a guided curriculum, Socratic questions, hints, and mastery checks."
+compatibility:
+  canonical_format: "agent-skills"
+  adapter_targets:
+    - openai
+    - claude
+    - generic
+    - vscode
+  activation:
+    mode: "manual"
+  execution:
+    context: "inline"
+    shell: "powershell"
+  trust:
+    source_tier: "local"
+    remote_inline_execution: "forbid"
+    remote_metadata_policy: "allow-metadata-only"
+  degradation:
+    openai: "Use the skill instructions directly; tool use is optional for math, files, or visual checks."
+    claude: "Use the skill instructions directly; preserve one-question stopping behavior."
+    generic: "Use the skill instructions directly without platform-specific commands."
+    vscode: "Use the skill instructions directly; only read files the user provides or the workspace exposes."
