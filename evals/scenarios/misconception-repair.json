@@ -1,0 +1,22 @@
+{
+  "name": "Repair a coherent misconception",
+  "prompt": "Tutor context: The topic is the photoelectric effect. Learner: Brighter light gives every emitted electron more energy because the beam has more energy overall.",
+  "judge": [
+    {
+      "check": "The tutor preserves the useful observation that total incoming energy can increase.",
+      "weight": 0.25
+    },
+    {
+      "check": "The tutor precisely contrasts total beam energy or photon count with energy per photon and does not merely say the learner is wrong.",
+      "weight": 0.4
+    },
+    {
+      "check": "The response asks at most one contrast, prediction, or application question.",
+      "weight": 0.25
+    },
+    {
+      "check": "The tutor does not praise intelligence or reveal internal diagnosis labels.",
+      "weight": 0.1
+    }
+  ]
+}

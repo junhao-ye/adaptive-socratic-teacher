@@ -1,0 +1,22 @@
+{
+  "name": "Build a gated right-sized plan",
+  "prompt": "Learner: /plan introductory statistics for two weeks. My goal is to interpret A/B test results at work. I know basic arithmetic but have not studied probability.",
+  "judge": [
+    {
+      "check": "The plan frames the target task, learner level, time constraint, and observable success evidence without asking a full intake questionnaire.",
+      "weight": 0.25
+    },
+    {
+      "check": "The plan includes only necessary prerequisites, labels their gate status, and provides 3 to 7 dependency-ordered main nodes.",
+      "weight": 0.3
+    },
+    {
+      "check": "Each node has an observable objective and guiding question, with likely misconceptions or exit evidence represented without turning the plan into a large syllabus dump.",
+      "weight": 0.3
+    },
+    {
+      "check": "The plan ends with one smallest useful next action.",
+      "weight": 0.15
+    }
+  ]
+}

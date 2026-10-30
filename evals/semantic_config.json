@@ -1,196 +1,210 @@
 {
   "optimizer_hints": {
-    "capability": "Teach learners with adaptive Socratic curriculum, guided questions, hints, and assessments",
+    "capability": "Adaptive tutoring through learning plans, diagnostic questions, progressive hints, concise explanations, practice, and mastery checks",
     "inputs": [
       "topic",
-      "lesson",
-      "curriculum",
-      "homework attempt",
-      "student level"
+      "learner goal",
+      "learner answer",
+      "problem attempt",
+      "student level",
+      "study timeframe"
     ],
     "trigger_actions": [
       "teach",
       "tutor",
-      "build a lesson plan",
+      "help me understand",
+      "build a study path",
       "ask guided questions",
       "give hints",
-      "test understanding"
+      "quiz me",
+      "prepare me for an exam"
     ],
     "exclusions": [
-      "one-off facts",
-      "generic summaries",
-      "homework completion without teaching",
-      "course marketing",
-      "professional advice"
+      "quick factual lookup",
+      "summary-only transformation",
+      "flashcards-only generation",
+      "submission-ready homework completion",
+      "teacher administration",
+      "product marketing",
+      "personalized professional advice"
     ],
     "artifacts": [
-      "curriculum",
-      "lesson",
+      "guided curriculum",
+      "lesson turn",
       "hint",
-      "worked example",
-      "practice questions",
-      "feedback"
+      "compact explanation",
+      "practice question",
+      "mastery feedback"
     ]
   },
   "fallback_positive_concepts": [
-    "teach",
-    "curriculum",
-    "socratic",
+    "tutoring",
+    "guided_learning",
+    "hinting",
     "assessment"
   ],
   "positive_concepts": {
-    "teach": {
-      "weight": 0.28,
+    "tutoring": {
+      "weight": 0.3,
       "phrases": [
-        "teach",
+        "teach me",
+        "tutor me",
+        "be my tutor",
+        "help me understand",
+        "explain then quiz me",
+        "prepare me for an exam",
         "teacher",
         "tutor",
-        "learn",
-        "learning",
-        "lesson",
-        "explain",
-        "help me understand",
-        "ai teacher",
+        "教我",
+        "老師",
         "老师",
         "導師",
-        "教我",
-        "学习",
-        "學習"
+        "导师",
+        "真正理解"
       ]
     },
-    "curriculum": {
-      "weight": 0.24,
-      "phrases": [
-        "curriculum",
-        "lesson plan",
-        "plan",
-        "/plan",
-        "prerequisite",
-        "from the basics",
-        "课程",
-        "課程",
-        "学习计划",
-        "學習計畫"
-      ]
-    },
-    "socratic": {
-      "weight": 0.24,
+    "guided_learning": {
+      "weight": 0.25,
       "phrases": [
         "socratic",
         "guided questions",
-        "ask me questions",
-        "questions before explaining",
-        "hint",
-        "hints",
-        "not the final answer",
+        "ask one question at a time",
+        "study path",
+        "learning roadmap",
+        "from the basics",
+        "/plan",
+        "/start",
         "蘇格拉底",
         "苏格拉底",
+        "一次問一題",
+        "一次问一题",
+        "學習路線",
+        "学习路线"
+      ]
+    },
+    "hinting": {
+      "weight": 0.22,
+      "phrases": [
+        "give me a hint",
+        "give me hints",
+        "give hints",
+        "not the final answer",
+        "without dumping the answer",
+        "/hint",
         "提示",
-        "提問",
-        "提问"
+        "下一步提示",
+        "不要直接給答案",
+        "不要直接给答案"
       ]
     },
     "assessment": {
-      "weight": 0.18,
+      "weight": 0.2,
       "phrases": [
-        "test",
+        "quiz me",
+        "test my understanding",
+        "mastery check",
+        "adapt to my mistakes",
         "/test",
-        "quiz",
-        "assess",
-        "assessment",
-        "practice problem",
-        "test me",
-        "mastery",
-        "测试",
-        "測試",
-        "练习题",
-        "練習題"
-      ]
-    },
-    "homework_teaching": {
-      "weight": 0.12,
-      "phrases": [
-        "homework by giving hints",
-        "help me with this homework",
-        "not the answer",
-        "作業提示",
-        "作业提示"
+        "測驗我",
+        "测试我",
+        "檢查理解",
+        "检查理解"
       ]
     }
   },
   "negative_concepts": {
-    "summary_only": {
-      "weight": 0.32,
+    "lookup_only": {
+      "weight": 0.34,
+      "exclusive": true,
+      "phrases": [
+        "one sentence",
+        "in one paragraph",
+        "what socratic dialogue means",
+        "quick definition",
+        "define",
+        "what is",
+        "一句話定義",
+        "一句话定义"
+      ]
+    },
+    "transformation_only": {
+      "weight": 0.34,
       "exclusive": true,
       "phrases": [
         "summarize",
-        "summary",
-        "recap",
-        "总结",
+        "translate",
+        "rewrite",
+        "flashcards only",
+        "anki only",
+        "摘要",
         "總結",
-        "概括"
+        "总结",
+        "翻譯",
+        "翻译"
       ]
     },
-    "fact_lookup": {
-      "weight": 0.28,
+    "content_generation_only": {
+      "weight": 0.4,
       "exclusive": true,
       "phrases": [
-        "one-sentence definition",
-        "definition of",
-        "what is",
-        "latest",
-        "定义",
-        "定義",
-        "最新"
+        "do not tutor me",
+        "practice questions with an answer key",
+        "question bank only",
+        "只要題庫",
+        "只要题库"
       ]
     },
-    "homework_completion": {
-      "weight": 0.42,
+    "completion_only": {
+      "weight": 0.44,
       "exclusive": true,
       "phrases": [
         "write my homework",
-        "homework answer",
         "for submission",
-        "direct answer",
-        "代写",
+        "graded essay",
+        "submission-ready",
         "代寫",
-        "作业答案",
-        "作業答案"
+        "代写",
+        "作業答案",
+        "作业答案"
       ]
     },
-    "marketing_course": {
-      "weight": 0.26,
+    "teacher_admin": {
+      "weight": 0.24,
+      "exclusive": true,
+      "phrases": [
+        "classroom syllabus",
+        "teacher-facing lesson plan",
+        "grading rubric",
+        "exam paper",
+        "評分標準",
+        "评分标准",
+        "考卷"
+      ]
+    },
+    "marketing_or_product": {
+      "weight": 0.3,
       "exclusive": true,
       "phrases": [
         "landing page",
-        "marketing",
-        "online course",
-        "sell this course",
-        "营销",
-        "行銷"
+        "marketing copy",
+        "ux review",
+        "ai tutor product",
+        "行銷",
+        "营销"
       ]
     },
     "professional_advice": {
-      "weight": 0.3,
+      "weight": 0.36,
       "exclusive": true,
       "phrases": [
         "medical advice",
         "legal advice",
         "financial advice",
-        "symptom",
+        "should I buy this stock",
+        "診斷",
         "诊断",
-        "診斷"
-      ]
-    },
-    "flashcards_only": {
-      "weight": 0.18,
-      "exclusive": true,
-      "phrases": [
-        "flashcards only",
-        "flashcards",
-        "anki",
-        "抽认卡",
-        "抽認卡"
+        "投資建議",
+        "投资建议"
       ]
     }
   }

@@ -1,0 +1,18 @@
+{
+  "name": "Skip a demonstrated prerequisite",
+  "prompt": "Plan context: Multiplying fractions was marked skip-tested before a lesson on ratios in equations. Learner: I know 3/4 times 2/5 is 3/10 because you multiply the numerators and denominators, then simplify. /start the ratios node.",
+  "judge": [
+    {
+      "check": "The tutor treats the explanation as defensible prerequisite evidence and skips remedial fraction instruction.",
+      "weight": 0.4
+    },
+    {
+      "check": "The tutor starts the requested ratios node with a brief orientation tied to the learning goal.",
+      "weight": 0.3
+    },
+    {
+      "check": "The response ends with one focused entry or guided question for the ratios node.",
+      "weight": 0.3
+    }
+  ]
+}

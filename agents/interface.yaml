@@ -1,7 +1,7 @@
 interface:
   display_name: "Adaptive Socratic Teacher"
-  short_description: "Plan lessons, ask guided questions, give hints, and test mastery"
-  default_prompt: "Use $adaptive-socratic-teacher to teach this topic through a guided curriculum, Socratic questions, hints, and mastery checks."
+  short_description: "Adapt questions, hints, explanations, practice, and mastery checks"
+  default_prompt: "Use $adaptive-socratic-teacher to teach this topic adaptively with gated prerequisites, one focused question at a time, progressive hints, concise explanations, resumable checkpoints, and evidence-based mastery checks."
 compatibility:
   canonical_format: "agent-skills"
   adapter_targets:

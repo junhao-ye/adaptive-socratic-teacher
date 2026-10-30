@@ -11,8 +11,8 @@
 
 | Dimension | Score | Note |
 | --- | ---: | --- |
-| Completeness | 5/5 | Combines curriculum, dialogue, hints, assessment, and config. |
-| Clarity | 5/5 | Runtime entry and references have clear routing. |
-| Consistency | 4/5 | Homework support is teaching-only, not completion. |
-| Practicality | 5/5 | Works without external services or scripts. |
-| Specificity | 5/5 | Socratic behavior is operationalized through classifiers and ladders. |
+| Completeness | 5/5 | Covers planning, explanation, dialogue, hints, assessment, continuation, and config. |
+| Clarity | 5/5 | Intent routes and four focused references are explicit. |
+| Consistency | 5/5 | One-question pacing coexists with timely direct explanation. |
+| Practicality | 5/5 | Starts from safe defaults without an intake questionnaire or external services. |
+| Specificity | 5/5 | Diagnosis, hint escalation, prerequisite gates, node exit evidence, checkpoints, test calibration, and stop rules are operationalized. |

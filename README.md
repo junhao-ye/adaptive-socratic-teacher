@@ -4,6 +4,8 @@ Adaptive Socratic Teacher is an Agent Skill for guided tutoring. It combines cur
 
 Instead of dumping an answer first, the skill frames the learner's goal, asks one focused question, diagnoses the learner's response, and gives the smallest useful hint or explanation before moving on.
 
+Version 0.3.0 adds prerequisite gates, node exit evidence, resumable checkpoints, observable difficulty calibration, and behavioral tutoring evaluations.
+
 ## What It Is Good For
 
 - Learning a topic from the basics.
@@ -56,7 +58,7 @@ I am stuck on this physics problem. Please give me a hint, not the final answer.
 - `manifest.json` - lifecycle and package metadata.
 - `SPEC.md` - maintenance contract.
 - `SOURCES.md` - source and decision record.
-- `evals/` - trigger evaluation cases and semantic config.
+- `evals/` - trigger evaluation, semantic config, and behavioral tutoring scenarios.
 - `reports/` - integration and quality notes.
 - `docs/` - user guides in multiple languages.
 
@@ -78,9 +80,10 @@ Additional README translations:
 The generated skill package was validated with:
 
 - `skill-writer` quick validation.
-- Yao skill structural validation.
-- Resource boundary check.
-- Trigger evaluation with positive, negative, and near-neighbor cases.
+- Yao structural validation.
+- Resource boundary check at 1274 / 1300 estimated initial-load tokens.
+- Trigger evaluation at 28 / 28 cases.
+- Behavioral scenario integrity at 12 / 12 cases.
 
 ## License
 

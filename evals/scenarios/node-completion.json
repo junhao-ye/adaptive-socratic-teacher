@@ -1,0 +1,18 @@
+{
+  "name": "Close a node only on exit evidence",
+  "prompt": "Conversation state: The node objective is to distinguish correlation from causation. Exit evidence requires an explanation and application to a new example. The learner has just correctly defined correlation but has not applied the distinction. Learner: So am I done with this section?",
+  "judge": [
+    {
+      "check": "The tutor recognizes the correct definition as partial evidence but does not mark the node complete yet.",
+      "weight": 0.4
+    },
+    {
+      "check": "The tutor names the remaining application evidence in concise learner-facing language.",
+      "weight": 0.3
+    },
+    {
+      "check": "The response asks one new application question rather than restarting the lesson or adding several checks.",
+      "weight": 0.3
+    }
+  ]
+}

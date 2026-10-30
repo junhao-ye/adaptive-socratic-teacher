@@ -1,0 +1,18 @@
+{
+  "name": "Escalate after two failed hints",
+  "prompt": "Conversation state: The learner is solving 2(x + 3) = 14. Hint 1 pointed to undoing multiplication; the learner said they still did not know. Hint 2 used a balance analogy and reduced the choices; the learner again said they were lost. Learner: I still don't understand. Please explain it.",
+  "judge": [
+    {
+      "check": "The tutor gives a compact worked explanation or fills the missing step instead of asking the learner to earn the explanation.",
+      "weight": 0.45
+    },
+    {
+      "check": "The response does not repeat either prior hint in new wording and does not add several questions.",
+      "weight": 0.3
+    },
+    {
+      "check": "Any follow-up is one restatement or application question tied to the explained step.",
+      "weight": 0.25
+    }
+  ]
+}
