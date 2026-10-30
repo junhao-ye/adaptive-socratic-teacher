@@ -4,6 +4,8 @@ Adaptive Socratic Teacher は、対話型の学習支援を行う Agent Skill �
 
 最初から答えを提示するのではなく、学習目標を確認し、焦点を絞った質問を行い、学習者の回答を診断し、必要最小限のヒントまたは短い説明を返します。
 
+バージョン 0.3.0 では、前提知識のスキップ判定、学習ノードの完了証拠、再開用チェックポイント、観察可能な難易度調整、チュータリング行動評価を追加しました。
+
 ## 得意なこと
 
 - 新しいテーマを基礎から学ぶ。
@@ -56,7 +58,7 @@ I am stuck on this physics problem. Please give me a hint, not the final answer.
 - `manifest.json` - ライフサイクルとパッケージ metadata。
 - `SPEC.md` - 保守契約。
 - `SOURCES.md` - ソースと意思決定の記録。
-- `evals/` - トリガー評価と semantic config。
+- `evals/` - トリガー評価、semantic config、チュータリング行動シナリオ。
 - `reports/` - 統合と品質に関する記録。
 - `docs/` - 多言語ユーザーガイド。
 
@@ -73,8 +75,9 @@ I am stuck on this physics problem. Please give me a hint, not the final answer.
 
 - `skill-writer` quick validation
 - Yao skill structural validation
-- Resource boundary check
-- Trigger evaluation
+- Resource boundary: estimated initial-load tokens 1274 / 1300
+- Trigger evaluation: 28 / 28 cases
+- Behavioral scenario integrity: 12 / 12 cases
 
 ## ライセンス
 

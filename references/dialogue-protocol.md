@@ -1,54 +1,73 @@
 # Dialogue Protocol
 
-Open this file when choosing the next tutoring move after a learner answer.
+Open this file after a learner answer, when choosing a question, or when deciding whether to hint or explain.
 
-## Answer Classifier
+## Diagnose Internally
 
-| Learner state | Signal | Tutor move |
+| Learner state | Evidence | Next move |
 | --- | --- | --- |
-| Solid | Correct answer with reasoning | Confirm, name the principle, ask a transfer question. |
-| Partial | Correct fragment or vague reasoning | Preserve the good part, ask one sharpening question. |
-| Guessed | Correct answer without support | Ask for why, evidence, or a simple example. |
-| Misconception | Wrong model that sounds confident | Ask a contrast question that exposes the conflict. |
-| Stuck | "I don't know", silence, circular attempts | Give a small hint, then ask a narrower question. |
-| Overwhelmed | Frustration or too many errors | Recap, reduce difficulty, and ask one easy win. |
+| Solid | Correct answer with a defensible reason | Name the principle briefly; ask an application or transfer question. |
+| Partial | Useful fragment with a missing link | Preserve the correct part; ask one sharpening question. |
+| Guessed | Correct result without support | Ask for a reason, prediction, or simple example. |
+| Misconception | Coherent but conflicting mental model | Ask one contrast question; explain if the conflict remains hidden. |
+| Contradictory evidence | The new answer conflicts with an earlier demonstrated idea | Surface the contrast and ask one reconciliation question before changing the diagnosis. |
+| Stuck | “I don't know,” circular attempts, or no usable start | Advance the hint ladder and narrow the task. |
+| Overwhelmed | Frustration, many simultaneous errors, or cognitive overload | Recap one idea, lower difficulty, and create an easy win. |
 
-## Turn Template
+Do not print the label by default. Convert it into learner-facing feedback.
 
-Use this after the learner answers:
+## Use One Micro-Turn
 
 ```markdown
-**What I notice:** [one sentence diagnosing the answer]
+**What is working:** [correct idea or productive reasoning move]
 
-**Tiny nudge:** [hint, contrast, or compact correction]
+**Next nudge:** [one hint, contrast, example, or compact explanation]
 
-**Question:** [one focused next question]
+**Question:** [one focused learner-response question]
 ```
 
-Use a direct explanation only when the learner asks explicitly, has attempted first, or is still stuck after smaller hints.
+Omit a heading when natural conversation is clearer. Keep only one main question at the stopping point.
 
-## Question Ladder
+## Choose The Question Level
 
-1. Recall: What do you already know?
-2. Distinguish: How is X different from Y?
-3. Cause: Why does this happen?
-4. Apply: What happens in this example?
-5. Transfer: How would the idea change in a new situation?
+| Level | Purpose | Example stem |
+| --- | --- | --- |
+| Recall | Activate relevant knowledge | What do you already know about...? |
+| Distinguish | Separate similar ideas | How is X different from Y? |
+| Cause | Build a mechanism | Why would this change produce that result? |
+| Apply | Use the idea in a familiar case | What happens in this example? |
+| Transfer | Generalize to a new case | How would the principle change here? |
 
-Move up after readiness. Move down when the learner guesses, stalls, or shows a misconception.
+Move up only with evidence. Move down after guessing, stalling, or overload.
 
-## Hint Ladder
+## Escalate The Hint
 
-1. Point to the relevant concept.
-2. Remove one wrong path.
-3. Offer a small analogy.
-4. Fill in one missing step.
-5. Give a compact explanation, then ask the learner to restate it.
+1. Point to the relevant concept or representation.
+2. Remove one wrong path or reduce the choices.
+3. Offer a small analogy, diagram, or concrete case.
+4. Fill in one missing step and return the next step to the learner.
+5. Give a compact explanation, then ask for restatement or application.
 
-Do not jump to level 5 unless the learner asks directly or fails after smaller hints.
+Never repeat the same hint with different wording. After two distinct failed hints, prefer level 4 or 5 over continued interrogation. If the learner explicitly asks for the explanation, give it without making them earn it.
 
-## Loop Stop Rules
+## Correct Without Taking Over
 
-- Stop after asking a learner-response question.
-- Continue only after the learner answers or asks for explanation.
-- If a learner repeatedly asks for the final answer, give the reasoning path first and keep the final answer brief.
+1. Quote or paraphrase the useful fragment.
+2. Identify one precise gap or conflict.
+3. Supply only the information needed to repair it.
+4. Ask the learner to use the repair in a new sentence, step, or example.
+
+For procedural problems, reveal one step at a time unless the learner asks for a worked solution. For conceptual questions, prefer a contrast or prediction before a definition dump.
+
+## Reconcile Contradictions
+
+When a learner's new answer conflicts with earlier evidence, do not silently overwrite the session state. Briefly state both positions, identify the deciding condition, and ask one question that lets the learner reconcile them. Treat a corrected explanation as stronger evidence than an isolated correct choice.
+
+## Stop And Resume
+
+- Stop after the learner-response question.
+- Resume only after the learner answers or changes the requested route.
+- If the learner asks for a summary, provide it without forcing another question.
+- If the learner repeats a request for the final answer, distinguish learning support from graded submission. Explain the reasoning path and keep any final result proportional to that boundary.
+- Update the session frame after each answer: current node, prerequisite evidence, diagnosis, hint level, mastery evidence, and unresolved misconception.
+- On `/continue`, resume from that evidence without repeating intake. If the context is long, show the compact checkpoint from `curriculum-assessment.md` before the next move.

@@ -1,0 +1,18 @@
+{
+  "name": "Resume from evidence without re-intake",
+  "prompt": "Conversation state: Current node is frequency versus intensity. The learner correctly linked photon energy to frequency but still treats intensity as energy per photon. One contrast example has been used. Learner: /continue",
+  "judge": [
+    {
+      "check": "The tutor resumes from the stated node and evidence without asking again for level, goals, preferences, or prior knowledge.",
+      "weight": 0.35
+    },
+    {
+      "check": "The tutor gives a compact checkpoint or equivalent recap that names the demonstrated idea and the single open gap.",
+      "weight": 0.35
+    },
+    {
+      "check": "The next move targets the unresolved distinction and ends with at most one learner-response question.",
+      "weight": 0.3
+    }
+  ]
+}

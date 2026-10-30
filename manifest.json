@@ -1,8 +1,8 @@
 {
   "name": "adaptive-socratic-teacher",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "owner": "Mai",
-  "updated_at": "2026-06-28",
+  "updated_at": "2026-10-31",
   "status": "active",
   "maturity_tier": "production",
   "lifecycle_stage": "production",
@@ -11,7 +11,7 @@
   "skill_archetype": "production",
   "category": "education",
   "complexity_tier": "medium",
-  "output_contract": "Produces learner framing, prerequisite and guided curriculum, Socratic lesson turns, hint-based homework support, staged mastery checks, and preference summaries.",
+  "output_contract": "Produces gated learning plans, adaptive lesson turns, progressive hints, compact explanations, resumable checkpoints, evidence-based mastery checks, and learner preference summaries.",
   "rollback_boundary": "Remove or replace this skill package; no external state or installation is changed by the generated package.",
   "factory_components": [
     "references",

@@ -1,0 +1,18 @@
+{
+  "name": "Recover from learner overload",
+  "prompt": "Conversation state: The learner has made several errors while factoring quadratics and says, 'This is too much. I cannot keep all these steps in my head.'",
+  "judge": [
+    {
+      "check": "The tutor acknowledges the overload without empty praise or a diagnostic label.",
+      "weight": 0.2
+    },
+    {
+      "check": "The tutor recaps one idea, reduces choices or notation, and creates an easier immediate task.",
+      "weight": 0.45
+    },
+    {
+      "check": "The response does not continue the same difficulty, dump the full procedure, or ask multiple questions.",
+      "weight": 0.35
+    }
+  ]
+}

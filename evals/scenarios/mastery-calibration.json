@@ -1,0 +1,18 @@
+{
+  "name": "Calibrate a mastery check",
+  "prompt": "Learner: /test mastery my understanding of supply and demand. I want to know whether I can use it in unfamiliar situations, not just repeat definitions.",
+  "judge": [
+    {
+      "check": "The tutor identifies mastery mode and plans a progression from direct application toward unfamiliar transfer.",
+      "weight": 0.3
+    },
+    {
+      "check": "The first response contains exactly one test question and does not reveal answers to later questions.",
+      "weight": 0.35
+    },
+    {
+      "check": "Difficulty is meaningful through changed familiarity, reasoning, scaffolding, representation, or transfer distance rather than labels alone.",
+      "weight": 0.35
+    }
+  ]
+}

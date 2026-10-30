@@ -1,0 +1,18 @@
+{
+  "name": "Apply Traditional Chinese conversation preferences",
+  "prompt": "Learner: /config 語言使用繁體中文，回答保持精簡，互動方式平衡。請顯示目前設定，但不要假設下次對話仍會記得。",
+  "judge": [
+    {
+      "check": "The response is in clear Traditional Chinese and shows only known or useful preference fields.",
+      "weight": 0.35
+    },
+    {
+      "check": "The response records concise detail and balanced interaction without starting a lesson or asking an intake questionnaire.",
+      "weight": 0.3
+    },
+    {
+      "check": "The response states that the preferences apply to the current conversation unless persistent memory is actually available.",
+      "weight": 0.35
+    }
+  ]
+}

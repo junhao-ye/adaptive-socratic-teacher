@@ -4,6 +4,8 @@ Adaptive Socratic Teacher 是一個用於引導式教學的 Agent Skill。它結
 
 它不會一開始就把答案倒出來，而是先確認學習目標，提出一個聚焦問題，診斷學習者回答，再給出最小必要提示或精簡講解。
 
+0.3.0 版加入先修知識跳級、節點退出證據、續課檢查點、可觀察的難度校準，以及教學行為評估案例。
+
 ## 適合用途
 
 - 從零開始學一個主題。
@@ -56,7 +58,7 @@ Use $adaptive-socratic-teacher /hint
 - `manifest.json` - 生命週期與套件 metadata。
 - `SPEC.md` - 維護契約。
 - `SOURCES.md` - 來源與決策紀錄。
-- `evals/` - 觸發評測與語義設定。
+- `evals/` - 觸發評測、語義設定與教學行為案例。
 - `reports/` - 整合與品質紀錄。
 - `docs/` - 多語使用說明。
 
@@ -73,8 +75,9 @@ Use $adaptive-socratic-teacher /hint
 
 - `skill-writer` quick validation。
 - Yao skill structural validation。
-- Resource boundary check。
-- Trigger evaluation。
+- Resource boundary：1274 / 1300 estimated initial-load tokens。
+- Trigger evaluation：28 / 28 cases。
+- Behavioral scenario integrity：12 / 12 cases。
 
 ## 授權
 

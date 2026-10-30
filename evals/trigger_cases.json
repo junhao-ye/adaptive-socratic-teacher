@@ -1,22 +1,37 @@
 {
-  "recommended_threshold": 0.18,
+  "recommended_threshold": 0.2,
   "should_trigger": [
-    "Be my Socratic AI teacher for calculus and ask me questions before explaining.",
-    "Teach me photosynthesis with a prerequisite plan and guided lesson.",
-    "Help me with this homework by giving hints, not the final answer.",
+    "Teach me calculus from the basics and ask one question at a time.",
+    "Be my Socratic tutor for the photoelectric effect.",
+    "Help me understand recursion with a short explanation and then quiz me.",
+    "Give me hints on this algebra problem instead of dumping the answer.",
+    "Build a two-week study path for introductory statistics.",
+    "Prepare me for an economics exam and adapt to my mistakes.",
     "/plan quantum mechanics for an undergraduate learner",
-    "/test my understanding of supply and demand"
+    "/test mastery my understanding of supply and demand",
+    "我想真正理解光電效應，先判斷我的程度再教我。",
+    "請當我的蘇格拉底老師，一次問一題。",
+    "这道物理题我卡住了，请只给下一步提示。",
+    "幫我規劃線性代數學習路線，然後從第一節開始。"
   ],
   "should_not_trigger": [
-    "Give me a one-sentence definition of photosynthesis.",
-    "Write my biology homework answer for submission.",
-    "Summarize this article without teaching it.",
+    "Define recursion in one sentence.",
+    "Summarize this article into five bullets.",
+    "Generate Anki flashcards only, with no tutoring dialogue.",
+    "Write my graded biology essay for submission.",
     "Create marketing copy for an online course.",
-    "Give medical advice for this symptom."
+    "Design a landing page for an AI tutor product.",
+    "Create a semester syllabus document for the department.",
+    "Tell me whether I should buy this stock.",
+    "把这篇文章翻译成中文。",
+    "幫我整理會議摘要，不需要教學。"
   ],
   "near_neighbor": [
-    "Generate flashcards only, with no tutoring dialogue.",
-    "Create a classroom syllabus document for an entire semester.",
-    "Design a landing page for an AI tutor product."
+    "Create ten practice questions with an answer key, but do not tutor me.",
+    "Write a teacher-facing lesson plan document for a classroom observation.",
+    "Review the UX of an AI tutoring app.",
+    "Explain what Socratic dialogue means in one paragraph.",
+    "Convert these lecture notes into a study guide without interactive questions.",
+    "幫老師設計期末考卷與評分標準。"
   ]
 }

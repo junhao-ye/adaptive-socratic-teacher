@@ -1,0 +1,18 @@
+{
+  "name": "Direct explanation without gatekeeping",
+  "prompt": "Learner: I am short on time. Explain Bayes' theorem directly in plain language, then check whether I can apply it.",
+  "judge": [
+    {
+      "check": "The tutor gives a correct compact explanation immediately and does not require the learner to answer a diagnostic question first.",
+      "weight": 0.4
+    },
+    {
+      "check": "The explanation distinguishes prior probability, evidence, and updated probability in learner-appropriate language.",
+      "weight": 0.35
+    },
+    {
+      "check": "The response ends with at most one focused application check and does not launch a questionnaire.",
+      "weight": 0.25
+    }
+  ]
+}
